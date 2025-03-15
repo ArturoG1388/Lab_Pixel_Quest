@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  nextLevel: Scene_1
+  nextLevel: Scene_5
 --- !u!212 &2069287947
 SpriteRenderer:
   m_ObjectHideFlags: 0

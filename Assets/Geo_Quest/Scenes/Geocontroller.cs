@@ -51,7 +51,7 @@ public class Geocontroller : MonoBehaviour
         float xinput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(xinput * speed, rb.velocity.y);
     }
-
+    private int coinCounter = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Runkiller");
@@ -70,8 +70,13 @@ public class Geocontroller : MonoBehaviour
                     SceneManager.LoadScene(nextLevel); 
                     break;
                 }
-                
-                
+
+            case "Coin":
+                {
+                    coinCounter++;
+                    Destroy(collision.gameObject);
+                    break;
+                }  
 
 
         }
